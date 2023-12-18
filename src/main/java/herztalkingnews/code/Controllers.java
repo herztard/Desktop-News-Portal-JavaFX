@@ -528,7 +528,7 @@ public class Controllers {
         String getUserCity = city.getText().trim();
         if(!getUserCity.equals("")) {
             String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=" +
-                    getUserCity + "&appid=7908168df347cd95a62e7df68d1fdc51&units=metric");
+                    getUserCity + "&appid=YourAPI&units=metric");
 
             if (!output.isEmpty()) {
                 try{
