@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../css/stylesheets.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="herztalkingnews.code.Controllers">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="251.60001220703123" minHeight="0.0" prefHeight="60.0" />
+    <RowConstraints maxHeight="711.2" minHeight="10.0" prefHeight="641.5999755859375" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="132.80002441406248" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+      <RowConstraints />
+  </rowConstraints>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="648.0" stroke="#472e2e00" strokeType="INSIDE" width="1166.0">
+               <StackPane.margin>
+                  <Insets bottom="60.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <StackPane.margin>
+                  <Insets bottom="110.0" left="100.0" right="100.0" top="50.0" />
+               </StackPane.margin>
+               <children>
+                  <VBox maxHeight="580.0" prefHeight="540.0" prefWidth="550.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="550.0" styleClass="text-garamond-38">
+                           <children>
+                              <Label styleClass="text-garamond-24" text="Technology" />
+                           </children>
+                        </HBox>
+                        <VBox fx:id="news1" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TextFlow prefHeight="90.0" prefWidth="643.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title-garamond-18" text="Учёные создали интерактивную карту Марса" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" />
+                                 </VBox.margin>
+                              </TextFlow>
+                              <TextFlow prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-content-garamond-16" text="Учёные представили самое масштабное трёхмерное изображение Марса, созданное в масштабе 5 метров на пиксель. Оно находится в открытом доступе, и его может посмотреть каждый. Мозаичное изображение, состоящее из более чем 5,7 триллиона пикселей (5,7 терапикселя), было создано в Лаборатории визуализации планет Брюса Мюррея Калифорнийского технологического института путём слияния 110 тысяч отдельных снимков, сделанных камерой межпланетной станции MRO." wrappingWidth="546.7498779296875" />
+                                 </children>
+                              </TextFlow>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <Line endX="448.89288330078125" endY="-3.535533905029297" startX="-100.0" strokeWidth="0.8">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Line>
+                        <VBox fx:id="new2" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TextFlow prefHeight="90.0" prefWidth="643.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title-garamond-18" text="В Сети опубликовали рендеры предполагаемого iPhone 15 Pro" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" />
+                                 </VBox.margin>
+                              </TextFlow>
+                              <TextFlow prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-content-garamond-16" text="Известный инсайдер Маск Вайнбахт и журналист 9to5Mac опубликовал высококачественные изображения предполагаемого iPhone 15 Pro. На рендерах демонстрируются все важные различия между новой моделью и текущей. Изображения основаны на информации от производителей официально одобренных аксессуаров для смартфонов Apple." wrappingWidth="635.8333129882812" />
+                                 </children>
+                              </TextFlow>
+                           </children>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="547.0" prefWidth="350.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="317.0" fitWidth="444.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/posts/mars.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="223.0" fitWidth="444.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/posts/iphone15.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="80.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1d1d1d" height="60.0" opacity="0.8" stroke="#1c1c1c00" strokeType="INSIDE" width="1366.0" StackPane.alignment="TOP_CENTER" />
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" styleClass="header-garamond-20" text=".herztalkingnews" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets left="100.0" />
+               </StackPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#technologyButtonOnAction" styleClass="header-montserrat-20" text="TECHNOLOGY" />
+                  <Button mnemonicParsing="false" onAction="#postButtonOnAction" styleClass="header-montserrat-20" text="MUSIC" />
+                  <Button mnemonicParsing="false" onAction="#memesButtonOnAction" styleClass="header-montserrat-20" text="MEMES" />
+                  <Button mnemonicParsing="false" onAction="#weatherPage" styleClass="header-montserrat-20" text="WEATHER" />
+                  <Button mnemonicParsing="false" onAction="#logOutButtonOnAction" styleClass="header-montserrat-20" text="LOG OUT" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets right="100.0" />
+               </StackPane.margin>
+            </HBox>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="80.0" prefWidth="200.0" GridPane.rowIndex="2" GridPane.rowSpan="3">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1d1d1d" height="60.0" opacity="0.8" stroke="#1c1c1c00" strokeType="INSIDE" width="1366.0" StackPane.alignment="TOP_CENTER" />
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" styleClass="bottom-montserrat-14" text="© 220103151 Adilzhan Slyamgazy" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets left="100.0" />
+               </StackPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets right="100.0" />
+               </StackPane.margin>
+               <children>
+                  <Hyperlink alignment="CENTER_RIGHT" onAction="#contactUsButtonOnAction" styleClass="bottom-montserrat-14" text="Contact Us" />
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</GridPane>

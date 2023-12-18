@@ -1,0 +1,262 @@
+@font-face {
+    -fx-font-family: 'Montserrat-SemiBold';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'EB-Garamond-Regular';
+    src: url('fonts/EBGaramond-Regular.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'EB-Garamond-Bold';
+    src: url('fonts/EBGaramond-Bold.ttf');
+}
+
+.root {
+        -fx-background-image: url(../img/background.png);
+}
+
+.check-box{
+    -fx-cursor: pointer;
+    -fx-font-family: Garamond;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 500;
+    -fx-font-size: 20px;
+    -fx-border-width: 2px;
+
+}
+
+.check-box .box {
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+
+
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #34bcf8;
+}
+
+.check-box:selected .box {
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-color: #34bcf8;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+
+.text-field{
+    -fx-cursor: pointer;
+    -fx-font-family: Montserrat;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-border-radius: 50;
+    -fx-min-height: 50;
+    -fx-min-width: 270;
+}
+
+.text-field:focused{
+    -fx-border-color: #34bcf8;
+    -fx-font-size: 14px;
+    -fx-font-family: Montserrat;
+}
+
+.continue-button{
+    -fx-cursor: pointer;
+    -fx-font-family: Garamond;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #fc3a3a;
+    -fx-font-weight: 500;
+    -fx-font-size: 20px;
+    -fx-min-height: 30;
+    -fx-min-width: 100;
+}
+
+
+.get-start-button{
+    -fx-cursor: pointer;
+    -fx-font-family: Montserrat;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-border-width: 3;
+    -fx-border-color: white;
+    -fx-border-radius: 30;
+    -fx-min-height: 50;
+    -fx-min-width: 270;
+}
+
+.get-start-button:hover{
+    -fx-border-color: #fff;
+    -fx-text-fill: #1d1d1d;
+    -fx-background-color: #fff;
+    -fx-cursor: pointer;
+}
+
+.search-button{
+    -fx-cursor: pointer;
+    -fx-font-family: Montserrat;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #1a1a1a;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-border-width: 3;
+    -fx-border-color: #1a1a1a;
+    -fx-border-radius: 30;
+    -fx-min-height: 50;
+    -fx-min-width: 270;
+}
+
+.search-button:hover{
+    -fx-border-color: #1a1a1a;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #1a1a1a;
+    -fx-cursor: pointer;
+}
+
+.text-area {
+    -fx-cursor: pointer;
+    -fx-font-family: Montserrat;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 5;
+    -fx-background-insets: 0, 1, 2, 3, 0;
+    -fx-text-fill: #1d1d1d;
+    -fx-font-weight: 500;
+    -fx-font-size: 16px;
+    -fx-border-width: 3;
+    -fx-border-color: #1d1d1d;
+    -fx-border-radius: 5;
+    -fx-min-height: 50;
+    -fx-min-width: 270;
+}
+
+.text-area:focused{
+    -fx-border-color: #34bcf8;
+    -fx-font-size: 14px;
+    -fx-font-family: Montserrat;
+}
+
+.text-garamond-24{
+    -fx-font-family: Garamond;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d1d1d;
+    -fx-font-size: 24pt;
+}
+
+.text-title-garamond-18{
+    -fx-font-family: Garamond;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d1d1d;
+    -fx-font-size: 18pt;
+}
+.text-post-title-garamond-24{
+    -fx-font-family: Garamond;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d1d1d;
+    -fx-font-size: 24pt;
+}
+.text-post-content-garamond-16{
+    -fx-font-family: Garamond;
+    -fx-font-weight: 500;
+    -fx-text-fill: #1d1d1d;
+    -fx-font-size: 16pt;
+}
+
+.text-content-garamond-16{
+    -fx-font-family: Garamond;
+    -fx-font-weight: 500;
+    -fx-text-fill: #8d8d8d;
+    -fx-font-size: 16pt;
+}
+.text-garamond-38 {
+    -fx-font-family: Garamond;
+    -fx-font-weight: 500;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 38pt;
+}
+.text-garamond-16{
+    -fx-font-family: Garamond;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-font-weight: 500;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16pt;
+}
+
+.text-montserrat-10{
+    -fx-font-family: Montserrat;
+    -fx-font-weight: 500;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10pt;
+}
+
+.header-garamond-20{
+    -fx-font-family: Garamond;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20pt;
+}
+
+.header-montserrat-20{
+    -fx-font-family: Montserrat;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14pt;
+}
+
+.header-montserrat-20:hover{
+    -fx-font-family: Montserrat;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-font-weight: bold;
+    -fx-text-fill: #9d9d9d;
+    -fx-font-size: 14pt;
+}
+
+.bottom-montserrat-14{
+    -fx-font-family: Montserrat;
+    -fx-font-weight: 500;
+    -fx-text-fill: #b9b9b9;
+    -fx-font-size: 14;
+}
+
+.date-montserrat-18{
+    -fx-font-family: Montserrat;
+    -fx-font-weight: 500;
+    -fx-text-fill: #8d8d8d;
+    -fx-font-size: 18;
+}
+
+.text-montserrat-24{
+    -fx-font-family: Montserrat;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d1d1d;
+    -fx-font-size: 16pt;
+}
+
+
+
+

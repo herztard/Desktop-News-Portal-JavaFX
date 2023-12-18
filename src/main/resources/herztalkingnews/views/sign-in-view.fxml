@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane alignment="CENTER" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../css/stylesheets.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="herztalkingnews.code.Controllers">
+    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="630.0" GridPane.columnIndex="1" xmlns:fx="http://javafx.com/fxml">
+        <padding>
+            <Insets bottom="50.0" left="0.0" right="0.0" top="50.0" />
+        </padding>
+        <Label styleClass="text-garamond-38" text="Sign in " textAlignment="CENTER" />
+        <Label style="-fx-font-weight: 900" styleClass="text-garamond-38" text=".herztalkingnews" textAlignment="CENTER" />
+    </HBox>
+    <VBox alignment="CENTER" prefHeight="388.0" prefWidth="630.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+        <VBox alignment="CENTER_LEFT" spacing="5.0" xmlns:fx="http://javafx.com/fxml">
+         <children>
+            <Label styleClass="text-montserrat-10" text="Username" />
+            <TextField fx:id="usernameTextField" styleClass="text-field" />
+         </children>
+        </VBox>
+      <VBox alignment="CENTER_LEFT" spacing="5.0">
+         <children>
+            <Label styleClass="text-montserrat-10" text="Password" />
+            <PasswordField fx:id="passwordTextField" />
+         </children>
+      </VBox>
+      <HBox prefHeight="31.0" prefWidth="590.0" spacing="120.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <CheckBox fx:id="rememberMeCheckBox" mnemonicParsing="false" styleClass="text-garamond-16" text="Remember me" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="282.0">
+               <children>
+                  <Hyperlink fx:id="continueButton" alignment="CENTER_RIGHT" onAction="#loginButtonOnAction" prefHeight="36.0" prefWidth="131.0" styleClass="text-garamond-16" text="Continue →" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="41.0" prefWidth="590.0">
+         <children>
+            <Label fx:id="dataIsNotCorrect" alignment="CENTER" prefHeight="42.0" prefWidth="593.0" style="-fx-text-fill: ff5e48;" styleClass="text-montserrat-10" textFill="#ff3333">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+    </VBox>
+   <HBox alignment="CENTER" prefHeight="80.0" prefWidth="630.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <padding>
+         <Insets bottom="50.0" left="0.0" right="0.0" top="50.0" />
+      </padding>
+      <children>
+         <VBox alignment="CENTER" prefHeight="74.0" prefWidth="318.0">
+            <children>
+               <HBox alignment="CENTER" prefHeight="21.0" prefWidth="318.0">
+                  <children>
+                     <TextFlow prefHeight="31.0" prefWidth="200.0" stylesheets="@../../css/stylesheets.css" textAlignment="CENTER">
+                        <children>
+                           <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-garamond-16" text="No account?" />
+                           <Hyperlink onAction="#signUpPageButtonClick" styleClass="text-garamond-16" stylesheets="@../../css/stylesheets.css" text="Sign up" underline="true" />
+                        </children>
+                     </TextFlow>
+                  </children>
+               </HBox>
+               <HBox alignment="CENTER" prefHeight="21.0" prefWidth="318.0">
+                  <children>
+                     <TextFlow prefHeight="60.0" prefWidth="227.0" stylesheets="@../../css/stylesheets.css" textAlignment="CENTER">
+                        <children>
+                           <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-garamond-16" text="Forgot password? " />
+                           <Hyperlink onAction="#resetPassPageButtonClick" styleClass="text-garamond-16" stylesheets="@../../css/stylesheets.css" text="Reset" underline="true" />
+                        </children>
+                     </TextFlow>
+                  </children>
+               </HBox>
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <CheckBox fx:id="isAdminCheckBox" mnemonicParsing="false" styleClass="text-garamond-16" text="I'm an admin" />
+                  </children>
+                  <padding>
+                     <Insets top="30.0" />
+                  </padding>
+               </HBox>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>

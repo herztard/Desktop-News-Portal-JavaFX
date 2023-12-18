@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../css/stylesheets.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="herztalkingnews.code.Controllers">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="251.60001220703123" minHeight="0.0" prefHeight="60.0" />
+    <RowConstraints maxHeight="711.2" minHeight="10.0" prefHeight="641.5999755859375" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="132.80002441406248" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+      <RowConstraints />
+  </rowConstraints>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="648.0" stroke="BLACK" strokeType="INSIDE" width="1166.0">
+               <StackPane.margin>
+                  <Insets bottom="60.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <StackPane.margin>
+                  <Insets bottom="110.0" left="100.0" right="100.0" top="50.0" />
+               </StackPane.margin>
+               <children>
+                  <VBox maxHeight="580.0" prefHeight="547.0" prefWidth="1140.0">
+                     <children>
+                        <VBox prefHeight="601.0" prefWidth="1066.0">
+                           <children>
+                              <TextFlow prefHeight="90.0" prefWidth="643.0" textAlignment="JUSTIFY">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-garamond-24" text="Основной солист группы Black Sabbath Оззи Осборн приезжает с туром в Каскелен" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" />
+                                 </VBox.margin>
+                              </TextFlow>
+                              <Label styleClass="date-montserrat-18" text="25 March 2023" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextFlow prefHeight="457.0" prefWidth="667.0" textAlignment="JUSTIFY">
+                                       <children>
+                                          <Text fill="#737373" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-post-content-garamond-16" text="В недавнем интервью herztalkingnews Оззи Осборн поделился своими планами и анонировал свой последний сольный тур по ресторанам Каскелена. Планируется, что первый концерт пройдет в Шанырак, куда будут приглашены студенты, которые сдали проект-2 по css-108 на фулл. Оззи выразил свою радость и восхищение перед молодыми талантами, которые смогли успешно освоить сложный проект, и с нетерпением ждет возможности выступить перед такой замечательной аудиторией. Фанаты ожидают этот тур с нетерпением и уже готовятся к его началу, в ожидании незабываемых выступлений легендарного &quot;Крестного отца хэви-метала&quot;. Организаторы тура также обещают уникальное зрелище, включая особые эффекты, медиа-шоу и эксклюзивные мерчандайз из коллекции Оззи. Музыкант намерен исполнить свои самые известные хиты, такие как &quot;Crazy Train&quot;, &quot;Mr. Crowley&quot; и многие другие, которые сделали его легендой мировой рок-сцены. Оззи признался, что ему будет тяжело прощаться с сольными выступлениями, так как они составляли большую часть его музыкальной карьеры. Однако он выразил свою признательность фанатам, которые всегда поддерживали его и вдохновляли на творчество на протяжении всех этих лет. Музыкант также подчеркнул, что он не намерен завершать свою музыкальную деятельность, и в будущем планирует заниматься другими проектами." textAlignment="JUSTIFY" wrappingWidth="852.8001708984375" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="20.0" />
+                                       </padding>
+                                    </TextFlow>
+                                    <ImageView fitHeight="468.0" fitWidth="399.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/memdelzhan.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="15.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" top="50.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="80.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1d1d1d" height="60.0" opacity="0.8" stroke="#1c1c1c00" strokeType="INSIDE" width="1366.0" StackPane.alignment="TOP_CENTER" />
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" styleClass="header-garamond-20" text=".herztalkingnews" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets left="100.0" />
+               </StackPane.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#technologyButtonOnAction" styleClass="header-montserrat-20" text="TECHNOLOGY" />
+                  <Button mnemonicParsing="false" onAction="#postButtonOnAction" styleClass="header-montserrat-20" text="MUSIC" />
+                  <Button mnemonicParsing="false" onAction="#memesButtonOnAction" styleClass="header-montserrat-20" text="MEMES" />
+                  <Button mnemonicParsing="false" onAction="#weatherPage" styleClass="header-montserrat-20" text="WEATHER" />
+                  <Button mnemonicParsing="false" onAction="#logOutButtonOnAction" styleClass="header-montserrat-20" text="LOG OUT" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets right="100.0" />
+               </StackPane.margin>
+            </HBox>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="80.0" prefWidth="200.0" GridPane.rowIndex="2" GridPane.rowSpan="3">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1d1d1d" height="60.0" opacity="0.8" stroke="#1c1c1c00" strokeType="INSIDE" width="1366.0" StackPane.alignment="TOP_CENTER" />
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" styleClass="bottom-montserrat-14" text="© 220103151 Adilzhan Slyamgazy" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="940.0" spacing="15.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Hyperlink alignment="CENTER_RIGHT" onAction="#contactUsButtonOnAction" styleClass="bottom-montserrat-14" text="Contact Us" />
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets left="100.0" />
+               </StackPane.margin>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</GridPane>
